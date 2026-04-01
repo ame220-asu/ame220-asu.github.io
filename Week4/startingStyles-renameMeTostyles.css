@@ -6,8 +6,8 @@
 */
 
 * {
-    primaryWhite: white;
-    primaryBlack: black;
-    emphasisRed: #C20000;
-    size: 12px;
+    --primaryWhite: white;
+    --primaryBlack: black;
+    --emphasisRed: #C20000;
+    --size: 12px;
 }
