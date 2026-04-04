@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISPLAY</title>
+    <style>
+        body {
+            background-color: black;
+            color: white; 
+        }
+
+        .cards {
+
+            width: 1000px; 
+            background-color: red;
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            grid-template-rows: auto auto;
+            justify-items: center;
+            align-items: stretch; 
+            gap: 12px;
+
+
+        }
+
+        .cards>div {
+            background-color: white;
+            color: black;
+
+            border: .5px solid rgb(255, 255, 255);
+            box-sizing: border-box;
+            padding: 10px;
+
+        }
+
+        .easyLayout{
+            width: 60vw;
+            display: grid; 
+            grid-template-columns: 50% 50%;
+           /* grid-template-areas: "header header"
+            "nav paragraph"
+            "footer footer";*/
+            gap: 12px; 
+        }
+
+        .easyLayout > div{
+            background-color: rgb(0, 61, 175);
+        }
+
+        #header{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        #navBar{
+        }
+
+        #content{
+        }
+
+        #footer{
+            grid-column-start: 1;
+            grid-column-end: 3; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="atAGlance">
+        <h2>at a glance</h2>
+        <div class="cards">
+            <div>
+                <h3>DESIGNING CONCEPTS</h3>
+                <p>I love to design things about things. don't you?</p>
+            </div>
+
+            <div>
+                <h3>INSTRUCTOR</h3>
+                <p>I teach AME 220! I think my students are really cool and I love to teach!</p>
+            </div>
+
+            <div>
+                <h3>DUNGEON MASTER</h3>
+                <p>I play way too much dungeons and dragons, and I love watching Dimension 20. </p>
+            </div>
+
+            <div>
+                <h3>DUNGEON MASTER</h3>
+                <p>I play way too much dungeons and dragons, and I love watching Dimension 20. </p>
+            </div>
+
+            <div>
+                <h3>DUNGEON MASTER</h3>
+                <p>I play way too much dungeons and dragons, and I love watching Dimension 20. </p>
+            </div>
+
+            <div>
+                <h3>DUNGEON MASTER</h3>
+                <p>I play way too much dungeons and dragons, and I love watching Dimension 20. </p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <h1>grid children & grid placement</h1>
+
+    <div class="easyLayout">
+        <div id="header">SOME HEADER</div>
+        <div id="navBar">
+            <ul>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+            </ul>
+        </div>
+        <div id="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nibh nulla, efficitur id aliquet eget, pulvinar
+            tristique ligula. Proin ipsum elit, vehicula non leo quis, vehicula tempus neque. Fusce in convallis lectus. Integer id
+            mauris vulputate erat semper faucibus. In hac habitasse platea dictumst. In rutrum dolor massa, vitae elementum orci
+            aliquet scelerisque. Curabitur malesuada consectetur fringilla. Suspendisse sit amet interdum turpis, et elementum orci.
+            Donec consequat libero eu enim cursus, id congue nisl facilisis. Proin vitae posuere enim. Suspendisse et mollis turpis.
+            Vivamus mi odio, aliquet ac consectetur vitae, fermentum a ante. Morbi sit amet cursus nunc. In ut sem in eros maximus
+            auctor. Aliquam luctus fermentum turpis, sed rutrum ex consectetur eget. Curabitur tempus placerat venenatis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nibh nulla, efficitur id aliquet eget, pulvinar
+            tristique ligula. Proin ipsum elit, vehicula non leo quis, vehicula tempus neque. Fusce in convallis lectus. Integer id
+            mauris vulputate erat semper faucibus. In hac habitasse platea dictumst. In rutrum dolor massa, vitae elementum orci
+            aliquet scelerisque. Curabitur malesuada consectetur fringilla. Suspendisse sit amet interdum turpis, et elementum orci.
+            Donec consequat libero eu enim cursus, id congue nisl facilisis. Proin vitae posuere enim. Suspendisse et mollis turpis.
+            Vivamus mi odio, aliquet ac consectetur vitae, fermentum a ante. Morbi sit amet cursus nunc. In ut sem in eros maximus
+            auctor. Aliquam luctus fermentum turpis, sed rutrum ex consectetur eget. Curabitur tempus placerat venenatis.</p>
+        </div>
+        <div id="footer">
+            <h2>Footer</h2>
+            <ul>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
