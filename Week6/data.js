@@ -1,20 +1,18 @@
-// pokemon sources https://pokemondb.net/sprites
-
 const pokemon = [
   {
     id: "one",
     name: "Pikachu",
     type: "Electric",
     image:
-      '<a href="https://pokemondb.net/pokedex/pikachu"><img src="https://img.pokemondb.net/sprites/x-y/normal/pikachu-f.png" alt="Pikachu"></a>'
+      '<a href="https://pokemondb.net/pokedex/pikachu"><img src="https://img.pokemondb.net/sprites/x-y/normal/pikachu-f.png" alt="Pikachu"></a>',
   },
 
   {
-    id: "two", 
+    id: "two",
     name: "Gengar",
     type: "Ghost",
     image:
-      '<a href="https://pokemondb.net/pokedex/gengar"><img src="https://img.pokemondb.net/sprites/x-y/normal/gengar.png" alt="Gengar"></a>'
+      '<a href="https://pokemondb.net/pokedex/gengar"><img src="https://img.pokemondb.net/sprites/x-y/normal/gengar.png" alt="Gengar"></a>',
   },
 
   {
@@ -22,34 +20,32 @@ const pokemon = [
     name: "Dragonite",
     type: "Dragon",
     image:
-      '<a href="https://pokemondb.net/pokedex/dragonite"><img src="https://img.pokemondb.net/sprites/x-y/normal/dragonite.png" alt="Dragonite"></a>'
+      '<a href="https://pokemondb.net/pokedex/dragonite"><img src="https://img.pokemondb.net/sprites/x-y/normal/dragonite.png" alt="Dragonite"></a>',
   },
 
   {
-    id: "four", 
+    id: "four",
     name: "Lapras",
     type: "Water",
     image:
-      '<a href="https://pokemondb.net/pokedex/lapras"><img src="https://img.pokemondb.net/sprites/x-y/normal/lapras.png" alt="Lapras"></a>'
+      '<a href="https://pokemondb.net/pokedex/lapras"><img src="https://img.pokemondb.net/sprites/x-y/normal/lapras.png" alt="Lapras"></a>',
   },
 
   {
-    id: "five", 
+    id: "five",
     name: "Umbreon",
     type: "Dark",
     image:
-      '<a href="https://pokemondb.net/pokedex/umbreon"><img src="https://img.pokemondb.net/sprites/x-y/normal/umbreon.png" alt="Umbreon"></a>'
-  }, 
+      '<a href="https://pokemondb.net/pokedex/umbreon"><img src="https://img.pokemondb.net/sprites/x-y/normal/umbreon.png" alt="Umbreon"></a>',
+  },
 
   {
-    id: "six", 
+    id: "six",
     name: "Mew",
     type: "Psychic",
     image:
-      '<a href="https://pokemondb.net/pokedex/mew"><img src="https://img.pokemondb.net/sprites/x-y/normal/mew.png" alt="Mew"></a>'
-  }
-
-
+      '<a href="https://pokemondb.net/pokedex/mew"><img src="https://img.pokemondb.net/sprites/x-y/normal/mew.png" alt="Mew"></a>',
+  },
 ];
 
 const trainer = {
@@ -63,6 +59,6 @@ const trainer = {
     "./assets/badge5.png",
     "./assets/badge6.png",
     "./assets/badge7.png",
-    "./assets/badge8.png"
-  ]
+    "./assets/badge8.png",
+  ],
 };
