@@ -5,6 +5,8 @@ document.getElementById("search").addEventListener("click", getLocation);
 //the api call to get the location
 
 async function getLocation() {
+  console.log("I fired!");
+  clearData();
   let input = document.getElementById("location").value;
   const url = `https://nominatim.openstreetmap.org/search?q=${input}&format=jsonv2`; // remember this is the "coffee" that we are ordering. we are being very specific with what we want
   try {
@@ -61,6 +63,13 @@ async function getWeather(lat, long) {
   } catch (error) {
     console.error(error.message);
   }
+}
+
+function clearData() {
+  document.getElementById("weatherCodeNow").innerHTML = "";
+  document.getElementById("locationName").innerHTML = "";
+  document.getElementById("weatherNow").innerHTML = "";
+  document.getElementById("highlow").innerHTML += "";
 }
 // now we have all of our data let's go ahead and make our widget!
 function generateCard(daily, current, input) {
