@@ -1,6 +1,9 @@
 // the search functionality
 
-document.getElementById("search").addEventListener("click", getLocation);
+document.getElementById("search").addEventListener("click", () => {
+  console.log("I fired");
+  getLocation();
+});
 
 //the api call to get the location
 
