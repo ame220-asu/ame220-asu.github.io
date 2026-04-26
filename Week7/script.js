@@ -1,9 +1,6 @@
 // the search functionality
 
-document.getElementById("search").addEventListener("click", () => {
-  console.log("I fired");
-  getLocation();
-});
+document.getElementById("search").addEventListener("click", getLocation);
 
 //the api call to get the location
 
@@ -72,7 +69,7 @@ function clearData() {
   document.getElementById("weatherCodeNow").innerHTML = "";
   document.getElementById("locationName").innerHTML = "";
   document.getElementById("weatherNow").innerHTML = "";
-  document.getElementById("highlow").innerHTML += "";
+  document.getElementById("highlow").innerHTML = "";
 }
 // now we have all of our data let's go ahead and make our widget!
 function generateCard(daily, current, input) {
